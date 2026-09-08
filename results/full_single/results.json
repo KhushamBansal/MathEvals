@@ -1,0 +1,324 @@
+[
+  {
+    "arm": "direct",
+    "dataset": "gsm8k",
+    "task": "gsm8k",
+    "n": 15,
+    "native_exact_match": 0.2,
+    "native_ok_recount": 0.2,
+    "shared_exact_match": 0.2,
+    "agg_raw": {
+      "alias": "gsm8k",
+      "exact_match,strict-match": 0.2,
+      "exact_match_stderr,strict-match": "N/A",
+      "exact_match,flexible-extract": 0.2,
+      "exact_match_stderr,flexible-extract": "N/A"
+    }
+  },
+  {
+    "arm": "cot",
+    "dataset": "gsm8k",
+    "task": "gsm8k",
+    "n": 15,
+    "native_exact_match": 0.8666666666666667,
+    "native_ok_recount": 0.8666666666666667,
+    "shared_exact_match": 0.8666666666666667,
+    "agg_raw": {
+      "alias": "gsm8k",
+      "exact_match,strict-match": 0.8666666666666667,
+      "exact_match_stderr,strict-match": "N/A",
+      "exact_match,flexible-extract": 0.8666666666666667,
+      "exact_match_stderr,flexible-extract": "N/A"
+    }
+  },
+  {
+    "arm": "plan_and_solve",
+    "dataset": "gsm8k",
+    "task": "gsm8k",
+    "n": 15,
+    "native_exact_match": 0.8666666666666667,
+    "native_ok_recount": 0.8666666666666667,
+    "shared_exact_match": 0.8666666666666667,
+    "agg_raw": {
+      "alias": "gsm8k",
+      "exact_match,strict-match": 0.8666666666666667,
+      "exact_match_stderr,strict-match": "N/A",
+      "exact_match,flexible-extract": 0.8666666666666667,
+      "exact_match_stderr,flexible-extract": "N/A"
+    }
+  },
+  {
+    "arm": "pal",
+    "dataset": "gsm8k",
+    "task": "gsm8k",
+    "n": 15,
+    "native_exact_match": 0.9333333333333333,
+    "native_ok_recount": 0.9333333333333333,
+    "shared_exact_match": 0.9333333333333333,
+    "agg_raw": {
+      "alias": "gsm8k",
+      "exact_match,strict-match": 0.9333333333333333,
+      "exact_match_stderr,strict-match": "N/A",
+      "exact_match,flexible-extract": 0.9333333333333333,
+      "exact_match_stderr,flexible-extract": "N/A"
+    }
+  },
+  {
+    "arm": "pot",
+    "dataset": "gsm8k",
+    "task": "gsm8k",
+    "n": 15,
+    "native_exact_match": 0.8,
+    "native_ok_recount": 0.8,
+    "shared_exact_match": 0.8,
+    "agg_raw": {
+      "alias": "gsm8k",
+      "exact_match,strict-match": 0.8,
+      "exact_match_stderr,strict-match": "N/A",
+      "exact_match,flexible-extract": 0.8,
+      "exact_match_stderr,flexible-extract": "N/A"
+    }
+  },
+  {
+    "arm": "declarative",
+    "dataset": "gsm8k",
+    "task": "gsm8k",
+    "n": 15,
+    "native_exact_match": 0.8,
+    "native_ok_recount": 0.8,
+    "shared_exact_match": 0.8,
+    "agg_raw": {
+      "alias": "gsm8k",
+      "exact_match,strict-match": 0.8,
+      "exact_match_stderr,strict-match": "N/A",
+      "exact_match,flexible-extract": 0.8,
+      "exact_match_stderr,flexible-extract": "N/A"
+    }
+  },
+  {
+    "arm": "calculator_only",
+    "dataset": "gsm8k",
+    "task": "gsm8k",
+    "n": 15,
+    "native_exact_match": 0.6,
+    "native_ok_recount": 0.6,
+    "shared_exact_match": 0.6,
+    "agg_raw": {
+      "alias": "gsm8k",
+      "exact_match,strict-match": 0.6,
+      "exact_match_stderr,strict-match": "N/A",
+      "exact_match,flexible-extract": 0.6,
+      "exact_match_stderr,flexible-extract": "N/A"
+    }
+  },
+  {
+    "arm": "direct",
+    "dataset": "math",
+    "task": "hendrycks_math_algebra",
+    "n": 15,
+    "native_exact_match": 0.2,
+    "native_ok_recount": 0.2,
+    "shared_exact_match": 0.2,
+    "agg_raw": {
+      "alias": "hendrycks_math_algebra",
+      "exact_match,none": 0.2,
+      "exact_match_stderr,none": "N/A"
+    }
+  },
+  {
+    "arm": "cot",
+    "dataset": "math",
+    "task": "hendrycks_math_algebra",
+    "n": 15,
+    "native_exact_match": 0.6,
+    "native_ok_recount": 0.6,
+    "shared_exact_match": 0.8,
+    "agg_raw": {
+      "alias": "hendrycks_math_algebra",
+      "exact_match,none": 0.6,
+      "exact_match_stderr,none": "N/A"
+    }
+  },
+  {
+    "arm": "plan_and_solve",
+    "dataset": "math",
+    "task": "hendrycks_math_algebra",
+    "n": 15,
+    "native_exact_match": 0.5333333333333333,
+    "native_ok_recount": 0.5333333333333333,
+    "shared_exact_match": 0.8,
+    "agg_raw": {
+      "alias": "hendrycks_math_algebra",
+      "exact_match,none": 0.5333333333333333,
+      "exact_match_stderr,none": "N/A"
+    }
+  },
+  {
+    "arm": "pal",
+    "dataset": "math",
+    "task": "hendrycks_math_algebra",
+    "n": 15,
+    "native_exact_match": 0.6,
+    "native_ok_recount": 0.6,
+    "shared_exact_match": 0.7333333333333333,
+    "agg_raw": {
+      "alias": "hendrycks_math_algebra",
+      "exact_match,none": 0.6,
+      "exact_match_stderr,none": "N/A"
+    }
+  },
+  {
+    "arm": "pot",
+    "dataset": "math",
+    "task": "hendrycks_math_algebra",
+    "n": 15,
+    "native_exact_match": 0.5333333333333333,
+    "native_ok_recount": 0.5333333333333333,
+    "shared_exact_match": 0.6,
+    "agg_raw": {
+      "alias": "hendrycks_math_algebra",
+      "exact_match,none": 0.5333333333333333,
+      "exact_match_stderr,none": "N/A"
+    }
+  },
+  {
+    "arm": "declarative",
+    "dataset": "math",
+    "task": "hendrycks_math_algebra",
+    "n": 15,
+    "native_exact_match": 0.2,
+    "native_ok_recount": 0.2,
+    "shared_exact_match": 0.2,
+    "agg_raw": {
+      "alias": "hendrycks_math_algebra",
+      "exact_match,none": 0.2,
+      "exact_match_stderr,none": "N/A"
+    }
+  },
+  {
+    "arm": "calculator_only",
+    "dataset": "math",
+    "task": "hendrycks_math_algebra",
+    "n": 15,
+    "native_exact_match": 0.13333333333333333,
+    "native_ok_recount": 0.13333333333333333,
+    "shared_exact_match": 0.2,
+    "agg_raw": {
+      "alias": "hendrycks_math_algebra",
+      "exact_match,none": 0.13333333333333333,
+      "exact_match_stderr,none": "N/A"
+    }
+  },
+  {
+    "arm": "direct",
+    "dataset": "svamp",
+    "task": "svamp",
+    "n": 15,
+    "native_exact_match": 0.6666666666666666,
+    "native_ok_recount": 0.6666666666666666,
+    "shared_exact_match": 0.6666666666666666,
+    "agg_raw": {
+      "alias": "svamp",
+      "exact_match,strict-match": 0.6666666666666666,
+      "exact_match_stderr,strict-match": "N/A",
+      "exact_match,flexible-extract": 0.6666666666666666,
+      "exact_match_stderr,flexible-extract": "N/A"
+    }
+  },
+  {
+    "arm": "cot",
+    "dataset": "svamp",
+    "task": "svamp",
+    "n": 15,
+    "native_exact_match": 1.0,
+    "native_ok_recount": 1.0,
+    "shared_exact_match": 1.0,
+    "agg_raw": {
+      "alias": "svamp",
+      "exact_match,strict-match": 1.0,
+      "exact_match_stderr,strict-match": "N/A",
+      "exact_match,flexible-extract": 1.0,
+      "exact_match_stderr,flexible-extract": "N/A"
+    }
+  },
+  {
+    "arm": "plan_and_solve",
+    "dataset": "svamp",
+    "task": "svamp",
+    "n": 15,
+    "native_exact_match": 0.9333333333333333,
+    "native_ok_recount": 0.9333333333333333,
+    "shared_exact_match": 0.9333333333333333,
+    "agg_raw": {
+      "alias": "svamp",
+      "exact_match,strict-match": 0.9333333333333333,
+      "exact_match_stderr,strict-match": "N/A",
+      "exact_match,flexible-extract": 0.9333333333333333,
+      "exact_match_stderr,flexible-extract": "N/A"
+    }
+  },
+  {
+    "arm": "pal",
+    "dataset": "svamp",
+    "task": "svamp",
+    "n": 15,
+    "native_exact_match": 1.0,
+    "native_ok_recount": 1.0,
+    "shared_exact_match": 1.0,
+    "agg_raw": {
+      "alias": "svamp",
+      "exact_match,strict-match": 1.0,
+      "exact_match_stderr,strict-match": "N/A",
+      "exact_match,flexible-extract": 1.0,
+      "exact_match_stderr,flexible-extract": "N/A"
+    }
+  },
+  {
+    "arm": "pot",
+    "dataset": "svamp",
+    "task": "svamp",
+    "n": 15,
+    "native_exact_match": 0.8666666666666667,
+    "native_ok_recount": 0.8666666666666667,
+    "shared_exact_match": 0.8666666666666667,
+    "agg_raw": {
+      "alias": "svamp",
+      "exact_match,strict-match": 0.8666666666666667,
+      "exact_match_stderr,strict-match": "N/A",
+      "exact_match,flexible-extract": 0.8666666666666667,
+      "exact_match_stderr,flexible-extract": "N/A"
+    }
+  },
+  {
+    "arm": "declarative",
+    "dataset": "svamp",
+    "task": "svamp",
+    "n": 15,
+    "native_exact_match": 0.9333333333333333,
+    "native_ok_recount": 0.9333333333333333,
+    "shared_exact_match": 0.9333333333333333,
+    "agg_raw": {
+      "alias": "svamp",
+      "exact_match,strict-match": 0.9333333333333333,
+      "exact_match_stderr,strict-match": "N/A",
+      "exact_match,flexible-extract": 0.9333333333333333,
+      "exact_match_stderr,flexible-extract": "N/A"
+    }
+  },
+  {
+    "arm": "calculator_only",
+    "dataset": "svamp",
+    "task": "svamp",
+    "n": 15,
+    "native_exact_match": 0.5333333333333333,
+    "native_ok_recount": 0.5333333333333333,
+    "shared_exact_match": 0.5333333333333333,
+    "agg_raw": {
+      "alias": "svamp",
+      "exact_match,strict-match": 0.5333333333333333,
+      "exact_match_stderr,strict-match": "N/A",
+      "exact_match,flexible-extract": 0.5333333333333333,
+      "exact_match_stderr,flexible-extract": "N/A"
+    }
+  }
+]

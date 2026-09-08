@@ -3,6 +3,5 @@
 __pycache__/
 *.pyc
 logs/
-results/
 .hf_cache/
 .pytest_cache/

@@ -1,0 +1,18 @@
+[
+  {
+    "arm": "direct",
+    "dataset": "gsm8k",
+    "task": "gsm8k",
+    "n": 15,
+    "native_exact_match": 0.26666666666666666,
+    "native_ok_recount": 0.26666666666666666,
+    "shared_exact_match": 0.26666666666666666,
+    "agg_raw": {
+      "alias": "gsm8k",
+      "exact_match,strict-match": 0.26666666666666666,
+      "exact_match_stderr,strict-match": "N/A",
+      "exact_match,flexible-extract": 0.26666666666666666,
+      "exact_match_stderr,flexible-extract": "N/A"
+    }
+  }
+]
