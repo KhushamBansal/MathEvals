@@ -1,0 +1,5 @@
+# Pinned to what was verified on this machine (macOS, system Python 3.9.6 in .venv)
+lm-eval==0.4.9
+openai==2.48.0
+sympy==1.14.0
+# lm-eval pulls: datasets, torch, transformers, etc.

@@ -1,0 +1,43 @@
+# SVAMP via HF dataset MU-NLPC/Calc-svamp
+#   doc_to_text   = question
+#   doc_to_target = result   (exact match)
+# The harness returns "#### <answer>"; the strict-match filter pulls the number,
+# same shape as GSM8K so extraction is identical across arms.
+task: svamp
+dataset_path: MU-NLPC/Calc-svamp
+output_type: generate_until
+test_split: test
+num_fewshot: 0
+doc_to_text: "{{question}}"
+doc_to_target: "{{result}}"
+generation_kwargs:
+  until:
+    - "\n\n"
+    - "Question:"
+  do_sample: false
+  temperature: 0.0
+repeats: 1
+filter_list:
+  - name: strict-match
+    filter:
+      - function: regex
+        regex_pattern: "#### (\\-?[0-9\\.\\,]+)"
+      - function: take_first
+  - name: flexible-extract
+    filter:
+      - function: regex
+        group_select: -1
+        regex_pattern: "(-?[$0-9.,]{2,})|(-?[0-9]+)"
+      - function: take_first
+metric_list:
+  - metric: exact_match
+    aggregation: mean
+    higher_is_better: true
+    ignore_case: true
+    ignore_punctuation: true
+    regexes_to_ignore:
+      - ","
+      - "\\$"
+      - "\\.$"
+metadata:
+  version: 1.0

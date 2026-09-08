@@ -1,0 +1,49 @@
+# Baseline evaluation harness for LLM math reasoning.
+# Everything configurable-by-name. temperature is forced to 0 in code; do not change here.
+
+models:
+  # Build-order step 1 uses mode: single (one model does orchestrator + solver).
+  # Step 2 flips to mode: two_model and re-runs GSM8K to confirm nothing shifted.
+  mode: single            # single | two_model
+  single: gpt-4o-mini     # used when mode == single
+  orchestrator: gpt-4o-mini
+  solver: gpt-4o
+  max_tokens: 1536
+
+datasets:
+  # name -> {task, fmt}. `task` is the lm-eval task; `fmt` selects the shared
+  # extractor's gold format. `limit` items, deterministic (first-N) order.
+  gsm8k:
+    task: gsm8k
+    fmt: gsm8k
+  math:
+    # "MATH" via built-in lm-eval task. hendrycks_math is split by subject and has
+    # no combined config; algebra is the representative slice used here. Change the
+    # task name to another hendrycks_math_* subject if desired.
+    task: hendrycks_math_algebra
+    fmt: math
+  svamp:
+    task: svamp            # custom task YAML in tasks/svamp/
+    fmt: svamp
+  putnam:
+    task: putnam_factored  # STUB - see tasks/putnam/README.md
+    fmt: putnam
+
+limit: 15
+num_fewshot: 0            # the arm scaffold replaces few-shot; keep 0 for every arm
+
+arms:
+  - direct
+  - cot
+  - plan_and_solve
+  - pal
+  - pot
+  - declarative
+  - calculator_only
+
+code_execution:
+  timeout_seconds: 12     # per generated-code subprocess
+
+paths:
+  logs_dir: logs
+  results_dir: results
