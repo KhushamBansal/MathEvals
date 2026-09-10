@@ -26,7 +26,11 @@ datasets:
     task: svamp            # custom task YAML in tasks/svamp/
     fmt: svamp
   putnam:
-    task: putnam_factored  # STUB - see tasks/putnam/README.md
+    # Putnam is NOT run through the 7-arm sweep. It uses the Putnam-AXIOM paper's
+    # own protocol (4-shot standardized prompt + SymPy grader) via the verbatim
+    # vendored task in tasks/putnam_axiom/ and the runner run_putnam_axiom.py.
+    # run_eval.py skips this entry (kept so `datasets` stays a complete list).
+    task: putnam_factored
     fmt: putnam
 
 limit: 15

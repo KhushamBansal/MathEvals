@@ -1,0 +1,130 @@
+{
+  "run_id": "putnam_axiom_modern_gpt-4o-mini",
+  "task": "putnam_axiom_original_modern",
+  "model": "gpt-4o-mini",
+  "n": 15,
+  "n_correct": 2,
+  "exact_match": 0.13333333333333333,
+  "per_problem": [
+    {
+      "doc_id": 0,
+      "id": "1985_A2",
+      "year": "1985",
+      "gold": "2/3",
+      "pred": "1",
+      "exact_match": 0
+    },
+    {
+      "doc_id": 1,
+      "id": "1985_A3",
+      "year": "1985",
+      "gold": "e^d-1",
+      "pred": "0",
+      "exact_match": 0
+    },
+    {
+      "doc_id": 2,
+      "id": "1985_A4",
+      "year": "1985",
+      "gold": "87",
+      "pred": "87",
+      "exact_match": 1
+    },
+    {
+      "doc_id": 3,
+      "id": "1985_A5",
+      "year": "1985",
+      "gold": "22",
+      "pred": "28",
+      "exact_match": 0
+    },
+    {
+      "doc_id": 4,
+      "id": "1985_A6",
+      "year": "1985",
+      "gold": "6x^2+5x+1",
+      "pred": "\\frac{3}{2}x^2+\\frac{7}{2}x+1",
+      "exact_match": 0
+    },
+    {
+      "doc_id": 5,
+      "id": "1985_B1",
+      "year": "1985",
+      "gold": "3",
+      "pred": "2",
+      "exact_match": 0
+    },
+    {
+      "doc_id": 6,
+      "id": "1985_B2",
+      "year": "1985",
+      "gold": "101^{99}",
+      "pred": "9901",
+      "exact_match": 0
+    },
+    {
+      "doc_id": 7,
+      "id": "1985_B4",
+      "year": "1985",
+      "gold": "\\frac{4}{\\pi^2}",
+      "pred": "\\frac{1}{4}",
+      "exact_match": 0
+    },
+    {
+      "doc_id": 8,
+      "id": "1985_B5",
+      "year": "1985",
+      "gold": "\\frac{\\sqrt{\\pi}}{\\sqrt{1985}}e^{-3970}",
+      "pred": "2\\sqrt{\\frac{2\\pi}{3970}}e^{-3970}",
+      "exact_match": 0
+    },
+    {
+      "doc_id": 9,
+      "id": "1986_A1",
+      "year": "1986",
+      "gold": "18",
+      "pred": "18",
+      "exact_match": 1
+    },
+    {
+      "doc_id": 10,
+      "id": "1986_A2",
+      "year": "1986",
+      "gold": "3",
+      "pred": "9",
+      "exact_match": 0
+    },
+    {
+      "doc_id": 11,
+      "id": "1986_A3",
+      "year": "1986",
+      "gold": "\\frac{\\pi}{2}",
+      "pred": "\\iny",
+      "exact_match": 0
+    },
+    {
+      "doc_id": 12,
+      "id": "1986_A4",
+      "year": "1986",
+      "gold": "4^n+2\\cdot3^n-4\\cdot2^n+1",
+      "pred": "3^n+2^n+1\\).",
+      "exact_match": 0
+    },
+    {
+      "doc_id": 13,
+      "id": "1986_B1",
+      "year": "1986",
+      "gold": "\\frac{2}{5}",
+      "pred": "\\frac{1}{3}",
+      "exact_match": 0
+    },
+    {
+      "doc_id": 14,
+      "id": "1986_B2",
+      "year": "1986",
+      "gold": "3",
+      "pred": "1",
+      "exact_match": 0
+    }
+  ]
+}

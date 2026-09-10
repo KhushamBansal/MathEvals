@@ -1,0 +1,7 @@
+# MathEvals addition: putnam_axiom_original restricted to the modern era
+# (year >= 1985) and ordered by (year, id). Everything else -- the standardized
+# 4-shot prompt, extraction, and is_equiv grading -- is inherited unchanged from
+# putnam_axiom_original.yaml. Use with `--limit N` for the first N modern problems.
+include: putnam_axiom_original.yaml
+task: putnam_axiom_original_modern
+process_docs: !function utils.process_docs_modern
